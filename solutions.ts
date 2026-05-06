@@ -4,7 +4,7 @@ const filterEvenNumbers = (numbers: number[]): number[] => {
 };
 
 const evenNumbers = filterEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8]);
-
+// sollution of probelm 2 ;
 const reverseString = (input: string): string => {
   const newReversedstring = input.split("").reverse().join("");
   return `"${newReversedstring}"`;
