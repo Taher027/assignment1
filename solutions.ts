@@ -77,3 +77,19 @@ class Student extends Person {
 }
 
 const student = new Student("Alice", 20, "A");
+
+// sollution of problem 7
+
+const getInterSection = (array1: number[], array2: number[]): number[] => {
+  //   const set1 = new Set(array1);
+  //   const set2 = new Set(array2);
+  //   const newSet = new Set([...set1].filter((num) => set2.has(num)));
+  //   return [...newSet];
+
+  // আমি  কনফিউসড ছিলাম যে প্রতিটি অ্যারের ইলিমেন্টস  ইউনিক করতে হবে কিনা, এবং রিটার্ন করা অ্যারে তে ইউনিক ইলিমেন্টস থাকবে কিনা,
+
+  const newArray = array1.filter((num) => array2.includes(num));
+  return newArray;
+};
+
+const intersection = getInterSection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]);
