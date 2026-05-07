@@ -29,4 +29,4 @@ console.log("do something")
 
 `
 
-In the example code
+In the example code we check data type conditionaly then take action.
