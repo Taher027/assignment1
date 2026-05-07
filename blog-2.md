@@ -21,11 +21,11 @@ In the exaple code we see a See a 'Student' type. From the student type we creat
 
 ### How Pick works?
 
-`pick craete na new type by selecting specific properties from an existing type.
+`Pick` craete na new type by selecting specific properties from an existing type.
 
-##Omit
+## Omit
 
-Omit does the opposite of Pick. Omit create a new type by excluding the specific properties from an existing type.
+`Omit` does the opposite of Pick. `Omit` create a new type by excluding the specific properties from an existing type.
 
 ```
 type Student ={
