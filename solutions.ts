@@ -4,6 +4,7 @@ const filterEvenNumbers = (numbers: number[]): number[] => {
 };
 
 const evenNumbers = filterEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8]);
+
 // sollution of probelm 2 ;
 const reverseString = (input: string): string => {
   const newReversedstring = input.split("").reverse().join("");
@@ -44,8 +45,14 @@ interface Book {
   author: string;
   publishedYear: number;
 }
-const toggleReadStatus = (book: Book): Book & { isRead: boolean } => {
-  return { ...book, isRead: true };
+interface BookWithReadStatus extends Book {
+  isRead: boolean;
+}
+const toggleReadStatus = (
+  book: Book,
+  isRead: boolean = true,
+): BookWithReadStatus => {
+  return { ...book, isRead };
 };
 const myBook = toggleReadStatus({
   title: "Ts",
@@ -77,7 +84,6 @@ class Student extends Person {
 }
 
 const student = new Student("Alice", 20, "A");
-
 // sollution of problem 7
 
 const getInterSection = (array1: number[], array2: number[]): number[] => {
@@ -93,3 +99,4 @@ const getInterSection = (array1: number[], array2: number[]): number[] => {
 };
 
 const intersection = getInterSection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]);
+console.log(intersection);
