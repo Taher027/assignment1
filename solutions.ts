@@ -99,4 +99,3 @@ const getInterSection = (array1: number[], array2: number[]): number[] => {
 };
 
 const intersection = getInterSection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]);
-console.log(intersection);
